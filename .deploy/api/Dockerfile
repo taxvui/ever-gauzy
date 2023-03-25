@@ -60,7 +60,7 @@ ARG UNLEASH_API_KEY
 FROM node:18-alpine3.16 AS dependencies
 
 LABEL maintainer="ever@ever.co"
-LABEL org.opencontainers.image.source https://github.com/ever-co/ever-gauzy
+LABEL org.opencontainers.image.source https://github.com/taxvui/ever-gauzy
 
 ENV CI=true
 
