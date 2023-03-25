@@ -59,9 +59,9 @@ jobs:
                   platforms: linux/amd64
                   tags: |
                       ghcr.io/taxvui/gauzy-api:latest
-                      everco/gauzy-api:latest
+                      taxvui/gauzy-api:latest
                       registry.digitalocean.com/ever/gauzy-api:latest
-                  cache-from: type=registry,ref=everco/gauzy-api:latest
+                  cache-from: type=registry,ref=taxvui/gauzy-api:latest
                   cache-to: type=inline
 
             - name: Docker images list
@@ -70,7 +70,7 @@ jobs:
 
             - name: Push to Docker Hub Registry
               run: |
-                  docker push everco/gauzy-api:latest
+                  docker push taxvui/gauzy-api:latest
 
             - name: Push to DigitalOcean Registry
               run: |
@@ -133,14 +133,14 @@ jobs:
                   load: true
                   tags: |
                       ghcr.io/taxvui/gauzy-webapp:latest
-                      everco/gauzy-webapp:latest
+                      taxvui/gauzy-webapp:latest
                       registry.digitalocean.com/ever/gauzy-webapp:latest
-                  cache-from: type=registry,ref=everco/gauzy-webapp:latest
+                  cache-from: type=registry,ref=taxvui/gauzy-webapp:latest
                   cache-to: type=inline
 
             - name: Push to Docker Hub Registry
               run: |
-                  docker push everco/gauzy-webapp:latest
+                  docker push taxvui/gauzy-webapp:latest
 
             - name: Push to DigitalOcean Registry
               run: |
