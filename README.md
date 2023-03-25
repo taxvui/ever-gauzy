@@ -1,13 +1,13 @@
 # Ever Gauzy Platform
 
 [uri_gauzy]: https://gauzy.co
-[uri_gauzy_github]: https://github.com/ever-co/ever-gauzy
+[uri_gauzy_github]: https://github.com/taxvui/ever-gauzy
 [uri_license]: https://www.gnu.org/licenses/agpl-3.0.html
 [uri_license_image]: https://img.shields.io/badge/License-AGPL%20v3-blue.svg
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=ever-co.gauzy-platform)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=taxvui.gauzy-platform)
 [![License: AGPL v3][uri_license_image]][uri_license]
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ever-co/ever-gauzy)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/taxvui/ever-gauzy)
 
 ## ⭐️ What is it?
 
@@ -86,7 +86,7 @@ More detailed list of the features available in the platform:
 - Multi-lingual
 - Dark / Light / Corporate / Material and other Themes
 
-Read more [about Gauzy](https://github.com/ever-co/ever-gauzy/wiki/About-Gauzy) and [how to use it](https://github.com/ever-co/ever-gauzy/wiki/How-to-use-Gauzy) at your company, on-demand business, freelance business, agency, studio or in-house teams.
+Read more [about Gauzy](https://github.com/taxvui/ever-gauzy/wiki/About-Gauzy) and [how to use it](https://github.com/taxvui/ever-gauzy/wiki/How-to-use-Gauzy) at your company, on-demand business, freelance business, agency, studio or in-house teams.
 
 ## 🔗 Links
 
@@ -111,10 +111,10 @@ You can download Gauzy Platform, Gauzy Server or Desktop Apps (Windows/Mac/Linux
 
 In addition, all downloads are also available from the following pages:
 
-- [Platform Releases](https://github.com/ever-co/ever-gauzy/releases)
-- [Server Releases](https://github.com/ever-co/ever-gauzy-server/releases)
-- [Desktop App Releases](https://github.com/ever-co/ever-gauzy-desktop/releases)
-- [Desktop Timer App Releases](https://github.com/ever-co/ever-gauzy-desktop-timer/releases)
+- [Platform Releases](https://github.com/taxvui/ever-gauzy/releases)
+- [Server Releases](https://github.com/taxvui/ever-gauzy-server/releases)
+- [Desktop App Releases](https://github.com/taxvui/ever-gauzy-desktop/releases)
+- [Desktop Timer App Releases](https://github.com/taxvui/ever-gauzy-desktop-timer/releases)
 
 ### Production (SaaS)
 
@@ -146,7 +146,7 @@ More information about our Server & Desktop Apps:
 - You can login with `admin@ever.co` and password `admin` to check Admin functionality if you installed Gauzy Server or Gauzy Desktop App. Note: such Admin user is not an employee, so you will not be able to track time.
 - You can login with `employee@ever.co` and password `123456` to check Employee related functionality in Gauzy UI or to run Desktop Timer from "Employee" perspective (such user is an Employee and can track time).
 - If you install Gauzy Server, it is possible to connect to it using browser (by default on <http://localhost:8084>) or using Gauzy Desktop Apps (make sure to configure Desktop apps to connect to Gauzy API on <http://127.0.0.1:5620/api> because it's where Gauzy Server API runs by default).
-- You can read more information about our Desktop Apps in the [Desktop Apps Wiki Page](https://github.com/ever-co/ever-gauzy/wiki/Gauzy-Desktop-Apps) and about our Server in the [Server Wiki Page](https://github.com/ever-co/ever-gauzy/wiki/Gauzy-Server).
+- You can read more information about our Desktop Apps in the [Desktop Apps Wiki Page](https://github.com/taxvui/ever-gauzy/wiki/Gauzy-Desktop-Apps) and about our Server in the [Server Wiki Page](https://github.com/taxvui/ever-gauzy/wiki/Gauzy-Server).
 
 ## 🧱 Technology Stack and Requirements
 
@@ -169,7 +169,7 @@ Note: thanks to TypeORM, Gauzy will support lots of DBs: SQLite (default, for de
 
 ## 📄 Documentation
 
-Please refer to our official [Platform Documentation](https://docs.gauzy.co) and to our [Wiki](https://github.com/ever-co/ever-gauzy/wiki) (WIP).
+Please refer to our official [Platform Documentation](https://docs.gauzy.co) and to our [Wiki](https://github.com/taxvui/ever-gauzy/wiki) (WIP).
 
 ## 🚀 Quick Start
 
@@ -204,8 +204,8 @@ Together with Gauzy, Docker Compose will run following:
 - Install [Yarn](https://github.com/yarnpkg/yarn) (if you don't have it) with `npm i -g yarn`.
 - Install NPM packages and bootstrap solution using command `yarn bootstrap`.
 - If you will need to make code changes (and push to Git repo), please run `yarn prepare:husky`.
-- Adjust settings in the [`.env.local`](https://github.com/ever-co/ever-gauzy/blob/develop/.env.local) which used in local runs.
-- Alternatively, you can copy [`.env.sample`](https://github.com/ever-co/ever-gauzy/blob/develop/.env.sample) to `.env` and change default settings there, e.g. database type, name, user, password, etc.
+- Adjust settings in the [`.env.local`](https://github.com/taxvui/ever-gauzy/blob/develop/.env.local) which used in local runs.
+- Alternatively, you can copy [`.env.sample`](https://github.com/taxvui/ever-gauzy/blob/develop/.env.sample) to `.env` and change default settings there, e.g. database type, name, user, password, etc.
 - Optionally, if you want to seed a lot of fake data for demo testing, run `yarn seed:all`.
 - Run both API and UI with single command: `yarn start`.
 - Open Gauzy UI on <http://localhost:4200> in your browser (API runs on <http://localhost:3000/api>).
@@ -221,9 +221,9 @@ Notes:
 
 ### Production
 
-- See [Setup Gauzy for Client Server](https://github.com/ever-co/ever-gauzy/wiki/Setup-Gauzy-for-Client-Server) for more information about production setup on your servers.
-- For simple deployments scenarios (e.g. for yourself or your own small organization), check our [Kubernetes configurations](https://github.com/ever-co/ever-gauzy/tree/develop/.deploy/k8s), which we are using to deploy Gauzy demo into [DigitalOcean k8s cluster](https://www.digitalocean.com/products/kubernetes).
-- In addition, check [Gauzy Pulumi](https://github.com/ever-co/ever-gauzy-pulumi) project (WIP), it makes complex Clouds deployments possible with a single command (`pulumi up`). Note: it currently supports AWS EKS (Kubernetes) for development and production with Application Load Balancers and AWS RDS Serverless PostgreSQL DB deployments. We also implemented deployments to ECS EC2 and Fargate Clusters in the same Pulumi project.
+- See [Setup Gauzy for Client Server](https://github.com/taxvui/ever-gauzy/wiki/Setup-Gauzy-for-Client-Server) for more information about production setup on your servers.
+- For simple deployments scenarios (e.g. for yourself or your own small organization), check our [Kubernetes configurations](https://github.com/taxvui/ever-gauzy/tree/develop/.deploy/k8s), which we are using to deploy Gauzy demo into [DigitalOcean k8s cluster](https://www.digitalocean.com/products/kubernetes).
+- In addition, check [Gauzy Pulumi](https://github.com/taxvui/ever-gauzy-pulumi) project (WIP), it makes complex Clouds deployments possible with a single command (`pulumi up`). Note: it currently supports AWS EKS (Kubernetes) for development and production with Application Load Balancers and AWS RDS Serverless PostgreSQL DB deployments. We also implemented deployments to ECS EC2 and Fargate Clusters in the same Pulumi project.
 
 ## 💌 Contact Us
 
@@ -231,7 +231,7 @@ Notes:
 - [Slack Community](https://join.slack.com/t/gauzy/shared_invite/enQtNzc5MTA5MDUwODg2LTI0MGEwYTlmNWFlNzQzMzBlOWExNTk0NzAyY2IwYWYwMzZjMTliYjMwNDI3NTJmYmM4MDQ4NDliMDNiNDY1NWU)
 - [Discord Chat](https://discord.gg/hKQfn4j)
 - [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/gauzy)
-- [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/ever-co/ever-gauzy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+- [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/taxvui/ever-gauzy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 - [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/evereq?utm_source=github&utm_medium=button&utm_term=evereq&utm_campaign=github)
 - For business inquiries: <mailto:gauzy@ever.co>
 - Please report security vulnerabilities to <mailto:security@ever.co>
@@ -250,19 +250,19 @@ If you discover any issue regarding security, please disclose the information re
 
 ## 🛡️ License
 
-We support the open-source community. If you're building awesome non-profit/open-source projects, we're happy to help and will provide (subject to [acceptance criteria](https://github.com/ever-co/ever-gauzy/wiki/Free-license-and-hosting-for-Non-profit-and-Open-Source-projects)) Ever Gauzy Enterprise edition license and free hosting option! Feel free to contact us at <mailto:ever@ever.co> to make a request. More details explained in our [Wiki](https://github.com/ever-co/ever-gauzy/wiki/Free-license-and-hosting-for-Non-profit-and-Open-Source-projects).
+We support the open-source community. If you're building awesome non-profit/open-source projects, we're happy to help and will provide (subject to [acceptance criteria](https://github.com/taxvui/ever-gauzy/wiki/Free-license-and-hosting-for-Non-profit-and-Open-Source-projects)) Ever Gauzy Enterprise edition license and free hosting option! Feel free to contact us at <mailto:ever@ever.co> to make a request. More details explained in our [Wiki](https://github.com/taxvui/ever-gauzy/wiki/Free-license-and-hosting-for-Non-profit-and-Open-Source-projects).
 
 This software is available under following licenses:
 
-- [Ever® Gauzy™ Platform Community Edition](https://github.com/ever-co/ever-gauzy/blob/master/LICENSE.md#gauzy-platform-community-edition-license)
-- [Ever® Gauzy™ Platform Small Business](https://github.com/ever-co/ever-gauzy/blob/master/LICENSE.md#gauzy-platform-small-business-license)
-- [Ever® Gauzy™ Platform Enterprise](https://github.com/ever-co/ever-gauzy/blob/master/LICENSE.md#gauzy-platform-enterprise-license)
+- [Ever® Gauzy™ Platform Community Edition](https://github.com/taxvui/ever-gauzy/blob/master/LICENSE.md#gauzy-platform-community-edition-license)
+- [Ever® Gauzy™ Platform Small Business](https://github.com/taxvui/ever-gauzy/blob/master/LICENSE.md#gauzy-platform-small-business-license)
+- [Ever® Gauzy™ Platform Enterprise](https://github.com/taxvui/ever-gauzy/blob/master/LICENSE.md#gauzy-platform-enterprise-license)
 
 #### The default Ever® Gauzy™ Platform license, without a valid Ever® Gauzy™ Platform Enterprise or Ever® Gauzy™ Platform Small Business License agreement, is the Ever® Gauzy™ Platform Community Edition License
 
 #### Please see [LICENSE](LICENSE.md) for more information on licenses. You can also [compare our offering](https://ever.co/compare-gauzy/#compare)
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fever-co%2Fgauzy.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fever-co%2Fgauzy?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftaxvui%2Fgauzy.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftaxvui%2Fgauzy?ref=badge_large)
 
 ## ™️ Trademarks
 
@@ -276,32 +276,32 @@ All other brand and product names are trademarks, registered trademarks or servi
 ## 🍺 Contribute
 
 - Please give us :star: on Github, it **helps**!
-- You are more than welcome to submit feature requests in the [separate repo](https://github.com/ever-co/feature-requests/issues)
+- You are more than welcome to submit feature requests in the [separate repo](https://github.com/taxvui/feature-requests/issues)
 - Pull requests are always welcome! Please base pull requests against the _develop_ branch and follow the [contributing guide](.github/CONTRIBUTING.md).
 
 ## 💪 Thanks to our Contributors
 
-See our contributors list in [CONTRIBUTORS.md](https://github.com/ever-co/ever-gauzy/blob/develop/.github/CONTRIBUTORS.md).
-You can also view full list of our [contributors tracked by Github](https://github.com/ever-co/ever-gauzy/graphs/contributors).
+See our contributors list in [CONTRIBUTORS.md](https://github.com/taxvui/ever-gauzy/blob/develop/.github/CONTRIBUTORS.md).
+You can also view full list of our [contributors tracked by Github](https://github.com/taxvui/ever-gauzy/graphs/contributors).
 
-<img src="https://contributors-img.web.app/image?repo=ever-co/ever-gauzy" />
+<img src="https://contributors-img.web.app/image?repo=taxvui/ever-gauzy" />
 
 ## ©️ Copyrigh
 
 #### Copyright © 2019-present, Ever Co. LTD. All rights reserved.
 
 [![huntr](https://cdn.huntr.dev/huntr_security_badge_mono.svg)](https://huntr.dev)
-[![Circle CI](https://circleci.com/gh/ever-co/ever-gauzy.svg?style=svg)](https://circleci.com/gh/ever-co/ever-gauzy)
-[![codecov](https://codecov.io/gh/ever-co/ever-gauzy/branch/master/graph/badge.svg)](https://codecov.io/gh/ever-co/ever-gauzy)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8c46f9eb9df64aa9859dea4d572059ac)](https://www.codacy.com/gh/ever-co/ever-gauzy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ever-co/ever-gauzy&amp;utm_campaign=Badge_Grade)
+[![Circle CI](https://circleci.com/gh/taxvui/ever-gauzy.svg?style=svg)](https://circleci.com/gh/taxvui/ever-gauzy)
+[![codecov](https://codecov.io/gh/taxvui/ever-gauzy/branch/master/graph/badge.svg)](https://codecov.io/gh/taxvui/ever-gauzy)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8c46f9eb9df64aa9859dea4d572059ac)](https://www.codacy.com/gh/taxvui/ever-gauzy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=taxvui/ever-gauzy&amp;utm_campaign=Badge_Grade)
 [![DeepScan grade](https://deepscan.io/api/teams/3293/projects/16703/branches/363423/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=3293&pid=16703&bid=363423)
-[![Known Vulnerabilities](https://snyk.io/test/github/ever-co/ever-gauzy/badge.svg)](https://snyk.io/test/github/ever-co/ever-gauzy)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/ever-co/ever-gauzy.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ever-co/ever-gauzy/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/ever-co/ever-gauzy.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ever-co/ever-gauzy/context:javascript)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fever-co%2Fever-gauzy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fever-co%2Fgauzy?ref=badge_shield)
+[![Known Vulnerabilities](https://snyk.io/test/github/taxvui/ever-gauzy/badge.svg)](https://snyk.io/test/github/taxvui/ever-gauzy)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/taxvui/ever-gauzy.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/taxvui/ever-gauzy/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/taxvui/ever-gauzy.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/taxvui/ever-gauzy/context:javascript)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftaxvui%2Fever-gauzy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftaxvui%2Fgauzy?ref=badge_shield)
 [![Crowdin](https://badges.crowdin.net/e/1d2b3405d65a56ec116d0984fd579cc9/localized.svg)](https://ever.crowdin.com/gauzy)
 
 ## 🔥 P.S.
 
-- If you interested to run on-demand (delivery) or digital marketplace business, check open-source [Ever Demand Platform](https://github.com/ever-co/ever-demand)
-- [We are Hiring: remote TypeScript / NestJS / Angular developers](https://github.com/ever-co/jobs#available-positions)
+- If you interested to run on-demand (delivery) or digital marketplace business, check open-source [Ever Demand Platform](https://github.com/taxvui/ever-demand)
+- [We are Hiring: remote TypeScript / NestJS / Angular developers](https://github.com/taxvui/jobs#available-positions)

@@ -58,7 +58,7 @@ jobs:
                   load: true
                   platforms: linux/amd64
                   tags: |
-                      ghcr.io/ever-co/gauzy-api:latest
+                      ghcr.io/taxvui/gauzy-api:latest
                       everco/gauzy-api:latest
                       registry.digitalocean.com/ever/gauzy-api:latest
                   cache-from: type=registry,ref=everco/gauzy-api:latest
@@ -78,7 +78,7 @@ jobs:
 
             - name: Push to Github Registry
               run: |
-                  docker push ghcr.io/ever-co/gauzy-api:latest
+                  docker push ghcr.io/taxvui/gauzy-api:latest
 
     gauzy-webapp:
         runs-on: ubuntu-22.04
@@ -132,7 +132,7 @@ jobs:
                   file: ./.deploy/webapp/Dockerfile
                   load: true
                   tags: |
-                      ghcr.io/ever-co/gauzy-webapp:latest
+                      ghcr.io/taxvui/gauzy-webapp:latest
                       everco/gauzy-webapp:latest
                       registry.digitalocean.com/ever/gauzy-webapp:latest
                   cache-from: type=registry,ref=everco/gauzy-webapp:latest
@@ -148,4 +148,4 @@ jobs:
 
             - name: Push to Github Registry
               run: |
-                  docker push ghcr.io/ever-co/gauzy-webapp:latest
+                  docker push ghcr.io/taxvui/gauzy-webapp:latest
