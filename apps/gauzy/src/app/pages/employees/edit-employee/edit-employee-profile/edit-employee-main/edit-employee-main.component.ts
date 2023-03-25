@@ -20,18 +20,15 @@ import { EmployeeStore, Store, ToastrService } from '../../../../../@core/servic
 	]
 })
 export class EditEmployeeMainComponent implements OnInit, OnDestroy {
-
 	organization: IOrganization;
 	hoverState: boolean;
 	selectedEmployee: IEmployee;
 
 	/*
-	* Employee Main Mutation Form
-	*/
+	 * Employee Main Mutation Form
+	 */
 	public form: FormGroup = EditEmployeeMainComponent.buildForm(this.fb);
-	static buildForm(
-		fb: FormBuilder
-	): FormGroup {
+	static buildForm(fb: FormBuilder): FormGroup {
 		return fb.group({
 			username: [],
 			email: [null, Validators.required],
@@ -40,9 +37,7 @@ export class EditEmployeeMainComponent implements OnInit, OnDestroy {
 			preferredLanguage: [],
 			profile_link: [],
 			imageId: [],
-			imageUrl: [
-				{ value: null, disabled: true }
-			],
+			imageUrl: [{ value: null, disabled: true }]
 		});
 	}
 
@@ -51,7 +46,7 @@ export class EditEmployeeMainComponent implements OnInit, OnDestroy {
 		private readonly store: Store,
 		private readonly toastrService: ToastrService,
 		private readonly employeeStore: EmployeeStore
-	) { }
+	) {}
 
 	ngOnInit() {
 		const storeOrganization$ = this.store.selectedOrganization$;
@@ -105,8 +100,8 @@ export class EditEmployeeMainComponent implements OnInit, OnDestroy {
 		const values = {
 			organizationId,
 			tenantId,
-			...(this.form.valid ? this.form.value : {}),
-		}
+			...(this.form.valid ? this.form.value : {})
+		};
 
 		this.employeeStore.userForm = values;
 		this.employeeStore.employeeForm = values;
@@ -125,5 +120,5 @@ export class EditEmployeeMainComponent implements OnInit, OnDestroy {
 		});
 	}
 
-	ngOnDestroy() { }
+	ngOnDestroy() {}
 }

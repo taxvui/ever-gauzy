@@ -8,7 +8,7 @@ import { IImageAsset } from '@gauzy/contracts';
 	styleUrls: ['./attach-receipt.component.scss']
 })
 export class AttachReceiptComponent implements OnInit {
-	constructor(private dialogRef: NbDialogRef<AttachReceiptComponent>) { }
+	constructor(private dialogRef: NbDialogRef<AttachReceiptComponent>) {}
 
 	imageUrl: string;
 	currentReceipt: string;
