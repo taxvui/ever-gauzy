@@ -60,27 +60,27 @@ if (!env.IS_DOCKER) {
 		if (window._env && window._env.api) {
 			API_BASE_URL= window._env.api;
 		}
-	
+
 		if (window._env && window._env.api) {
 			CLIENT_BASE_URL = window.location.origin;
 		}
 	} catch(e) {}
 
-	export const environment: Environment = 
+	export const environment: Environment =
 	{
 		production:  ${isProd},
 
 		API_BASE_URL: API_BASE_URL,
 		CLIENT_BASE_URL: CLIENT_BASE_URL,
 
-		COMPANY_NAME: 'Ever Co. LTD',
-		COMPANY_SITE: 'Gauzy',
-		COMPANY_LINK: 'https://ever.co/',
-		COMPANY_SITE_LINK: 'https://gauzy.co',
+		COMPANY_NAME: 'QuickSales LTD',
+		COMPANY_SITE: 'QuickSales',
+		COMPANY_LINK: 'https://quicksales.vn/',
+		COMPANY_SITE_LINK: 'https://quicksales.vn',
 		COMPANY_GITHUB_LINK: 'https://github.com/taxvui',
 		COMPANY_GITLAB_LINK: 'https://gitlab.com/taxvui',
-		COMPANY_FACEBOOK_LINK: 'https://www.facebook.com/gauzyplatform',
-		COMPANY_TWITTER_LINK: 'https://twitter.com/gauzyplatform',
+		COMPANY_FACEBOOK_LINK: 'https://www.facebook.com/quicksalesplatform',
+		COMPANY_TWITTER_LINK: 'https://twitter.com/quicksalesplatform',
 		COMPANY_LINKEDIN_LINK: 'https://www.linkedin.com/company/taxvui.',
 
 		CLOUDINARY_CLOUD_NAME: '${env.CLOUDINARY_CLOUD_NAME}',
@@ -127,7 +127,7 @@ if (!env.IS_DOCKER) {
 		GAUZY_CLOUD_APP: '${env.GAUZY_CLOUD_APP}',
 
 		FILE_PROVIDER: '${env.FILE_PROVIDER}',
-	};	
+	};
 	`;
 } else {
 	envFileContent += `
@@ -152,21 +152,21 @@ if (!env.IS_DOCKER) {
 		}
 	}
 
-	export const environment: Environment = 
+	export const environment: Environment =
 	{
 		production:  ${isProd},
 
 		API_BASE_URL: API_BASE_URL,
 		CLIENT_BASE_URL: CLIENT_BASE_URL,
 
-		COMPANY_NAME: 'Ever Co. LTD',
-		COMPANY_SITE: 'Gauzy',
-		COMPANY_LINK: 'https://ever.co/',
-		COMPANY_SITE_LINK: 'https://gauzy.co',
+		COMPANY_NAME: 'QuickSales LTD',
+		COMPANY_SITE: 'QuickSales',
+		COMPANY_LINK: 'https://quicksales.vn/',
+		COMPANY_SITE_LINK: 'https://quicksales.vn',
 		COMPANY_GITHUB_LINK: 'https://github.com/taxvui',
 		COMPANY_GITLAB_LINK: 'https://gitlab.com/taxvui',
-		COMPANY_FACEBOOK_LINK: 'https://www.facebook.com/gauzyplatform',
-		COMPANY_TWITTER_LINK: 'https://twitter.com/gauzyplatform',
+		COMPANY_FACEBOOK_LINK: 'https://www.facebook.com/quicksalesplatform',
+		COMPANY_TWITTER_LINK: 'https://twitter.com/quicksalesplatform',
 		COMPANY_LINKEDIN_LINK: 'https://www.linkedin.com/company/taxvui.',
 
 		CLOUDINARY_CLOUD_NAME: 'DOCKER_CLOUDINARY_CLOUD_NAME',
@@ -242,10 +242,10 @@ if (!isProd) {
 // we always want first to remove old generated files (one of them is not needed for current build)
 try {
 	unlinkSync(`./apps/gauzy/src/environments/environment.ts`);
-} catch {}
+} catch { }
 try {
 	unlinkSync(`./apps/gauzy/src/environments/environment.prod.ts`);
-} catch {}
+} catch { }
 
 const envFileDest: string = isProd ? 'environment.prod.ts' : 'environment.ts';
 const envFileDestOther: string = !isProd
