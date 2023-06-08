@@ -84,7 +84,7 @@
 		"sound-play": "1.1.0",
 		"sqlite3": "^5.1.5",
 		"squirrelly": "^8.0.8",
-		"twing": "^5.0.2",
+		"twing": "^5.1.3",
 		"underscore": "^1.13.3"
 	},
 	"optionalDependencies": {
