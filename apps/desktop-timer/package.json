@@ -38,7 +38,7 @@
 		"@angular/cdk": "13.2.2",
 		"@angular/material": "13.2.2",
 		"@electron/remote": "^2.0.8",
-		"@datorama/akita": "^7.1.1",
+		"@datorama/akita": "^8.0.0",
 		"@datorama/akita-ngdevtools": "^7.0.0",
 		"@gauzy/contracts": "^0.1.0",
 		"@gauzy/desktop-ui-lib": "^0.1.0",
@@ -84,7 +84,7 @@
 		"sound-play": "1.1.0",
 		"sqlite3": "^5.1.5",
 		"squirrelly": "^8.0.8",
-		"twing": "^5.0.2",
+		"twing": "^5.1.5",
 		"underscore": "^1.13.3"
 	},
 	"optionalDependencies": {
