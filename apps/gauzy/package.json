@@ -43,7 +43,7 @@
 		"@asymmetrik/ngx-leaflet": "^13.0.2",
 		"@circlon/angular-tree-component": "^11.0.4",
 		"@cloudinary/angular-5.x": "^1.5.2",
-		"@datorama/akita": "^7.1.1",
+		"@datorama/akita": "^8.0.0",
 		"@datorama/akita-ngdevtools": "^7.0.0",
 		"@electron/remote": "^2.0.8",
 		"@fortawesome/angular-fontawesome": "^0.10.1",
