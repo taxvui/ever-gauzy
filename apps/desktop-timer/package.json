@@ -42,7 +42,7 @@
 		"@datorama/akita-ngdevtools": "^7.0.0",
 		"@gauzy/contracts": "^0.1.0",
 		"@gauzy/desktop-ui-lib": "^0.1.0",
-		"@grpc/grpc-js": "^1.6.7",
+		"@grpc/grpc-js": "^1.8.22",
 		"@nebular/auth": "^9.0.3",
 		"@nebular/bootstrap": "^9.0.3",
 		"@nebular/eva-icons": "^9.0.3",
