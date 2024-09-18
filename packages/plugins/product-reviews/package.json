@@ -53,7 +53,7 @@
 		"@gauzy/core": "^0.1.0",
 		"@gauzy/plugin": "^0.1.0",
 		"@nestjs/common": "^10.3.7",
-		"@nestjs/swagger": "^7.3.0",
+		"@nestjs/swagger": "^7.4.1",
 		"@nestjs/typeorm": "^10.0.2",
 		"apollo-server-core": "^3.10.1",
 		"chalk": "4.1.2",
