@@ -95,7 +95,7 @@
 		"core-js": "^3.8.3",
 		"d3": "^7.4.4",
 		"d3-selection-multi": "^1.0.1",
-		"date-fns": "^2.28.0",
+		"date-fns": "^3.0.0",
 		"date-holidays": "^1.6.1",
 		"dayjs": "^1.11.4",
 		"detect-passive-events": "^1.0.4",
