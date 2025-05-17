@@ -88,7 +88,7 @@
 		"twing": "^5.0.2",
 		"locutus": "^2.0.30",
 		"underscore": "^1.13.3",
-		"undici": "^6.10.2"
+		"undici": "^6.21.2"
 	},
 	"optionalDependencies": {
 		"node-linux": "^0.1.12",
