@@ -92,7 +92,7 @@
 		"squirrelly": "^8.0.8",
 		"twing": "^5.0.2",
 		"typeorm": "^0.3.20",
-		"undici": "^6.10.2"
+		"undici": "^6.21.2"
 	},
 	"optionalDependencies": {
 		"node-linux": "^0.1.12",
