@@ -80,7 +80,7 @@
 		"pg": "^8.13.1",
 		"pg-query-stream": "^4.7.1",
 		"rxjs": "^7.8.2",
-		"screenshot-desktop": "^1.15.0",
+		"screenshot-desktop": "^1.15.2",
 		"sound-play": "1.1.0",
 		"squirrelly": "^8.0.8",
 		"twing": "^5.0.2",
