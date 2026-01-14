@@ -37,7 +37,7 @@
 		"@angular/animations": "^19.2.10",
 		"@angular/cdk": "^19.2.11",
 		"@angular/common": "^19.2.10",
-		"@angular/core": "^19.2.10",
+		"@angular/core": "^19.2.18",
 		"@angular/forms": "^19.2.10",
 		"@angular/material": "^19.2.11",
 		"@angular/router": "^19.2.10",
